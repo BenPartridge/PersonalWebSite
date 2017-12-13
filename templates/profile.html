@@ -1,4 +1,7 @@
-<!doctype html>
-<title>Welcome to MyProfile</title>
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-<h1>Hey there {{ name }}</h1>
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+    how are all of you
+</div>
+{% endblock %}
