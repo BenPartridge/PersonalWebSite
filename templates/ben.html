@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+
+<main role="main" class="container">
+    <div class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">Benjamin Partridge</h1>
+            <p class="lead blog-description">Developer</p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">About Me</h2>
+                <p class="blog-post-meta"></p>
+
+                <hr>
+                <p>Hello</p>
+                <p>I am the Developer of this website. The original purpose of this site was to house my various
+                projects. More of a way to keep track of what I was doing and how I have progressed as a developer.
+                </p>
+                <h2>Projects</h2>
+                <hr>
+                <h3>Automated Drone</h3>
+                <p>One of the first major projects I took on was my senior project for the University of Southern
+                Indiana. Three of my fellow seniors and one freshman created a drone that could detect objects, detect
+                faces, and fly to preset destinations. Some of the scraps of code can be found on my GitHub, although
+                the vast majority of the project stayed with the USI chapter of ACM. On this project, I was responsible
+                for facial/object detection.</p>
+                <h3>Home Network</h3>
+                <p>This website falls into this catagory, but I'll probably expand this one at a later date. Right now,
+                all that I have on the home network is this site. I hope to install more things in the future, such as
+                plex servers, file servers, and little bits of home automation. But right now, this site is all that
+                fits here</p>
+            </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+                <img src="{{url_for('static', filename='IMG_20171203_185828_513.jpg')}}" class="img-thumbnail">
+            </div>
+            <div class="sidebar-module">
+                <h4>Documents</h4>
+                <ol class="list-unstyled">
+                    <li><a href="{{url_for('static', filename='Benjamin Partridge.pdf')}}" target="_blank">Resume</a></li>
+                </ol>
+            </div>
+            <div class="sidebar-module">
+                <h4>Other Links</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://github.com/BenPartridge" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/benjamin-partridge/" target="_blank">LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ol>
+            </div>
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+{% endblock %}
